@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="jumbotron text-center">
+	<img src="/static/00.png" alt="NSIT"></br></br>
+    <h1>Handwriting Generation</h1>
+    <p class="lead">Select a Pre-trained Style (1-8) and Bias</br></p>
+    {% if session.logged_in == NULL %}
+      <a href="/info" class="btn btn-success btn-lg">GO</a>
+    {% endif %}
+  </div>
+</br></br>
+<center>
+	Style 1
+	</br>
+	<img src="/static/style00.png" alt="Style 0">
+	</br></br></br>
+	Style 2
+	</br>
+	<img src="/static/style1.png" alt="Style 1">
+	</br></br></br>
+	Style 3
+	</br>
+	<img src="/static/style2.png" alt="Style 2">
+	</br></br></br>
+	Style 4
+	</br>
+	<img src="/static/style3.png" alt="Style 3">
+	</br></br></br>
+	Style 5
+	</br>
+	<img src="/static/style4.png" alt="Style 4">
+	</br></br></br>
+	Style 6
+	</br>
+	<img src="/static/style5.png" alt="Style 5">
+	</br></br></br>
+	Style 7
+	</br>
+	<img src="/static/style6.png" alt="Style 6">
+	</br></br>
+	Style 8
+	</br>
+	<img src="/static/style7.png" alt="Style 7">
+	</br></br>
+</center>
+{% endblock %}
